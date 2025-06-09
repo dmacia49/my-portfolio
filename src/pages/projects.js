@@ -35,6 +35,8 @@ export default function Projects() {
                     src={project.img}
                     alt={project.url}
                     className={styles.cardImage}
+                    width={200}
+                    height={200}
                   />
                 </div>
                 <div className={styles.cardContent}>
