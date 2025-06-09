@@ -6,11 +6,19 @@ import Image from "next/image";
 const projects = [
   {
     name: "Portfolio Website",
-    url: "https://yourportfolio.com",
-    img: "/file.svg",
+    url: "https://my-portfolio-orcin-xi-qcuazih9qu.vercel.app",
+    img: "/por-image.png",
   },
-  { name: "E-Commerce App", url: "https://ecommerce.com", img: "/file.svg" },
-  { name: "Task Manager", url: "https://taskmanager.com", img: "/file.svg" },
+  {
+    name: "E-Commerce App",
+    url: "https://frontend-ecom-nine.vercel.app/",
+    img: "/e-com.png",
+  },
+  {
+    name: "Essay Editor",
+    url: "https://essay-editor-navy.vercel.app/",
+    img: "/Essay-Editor.png",
+  },
   { name: "Blog Platform", url: "https://blog.com", img: "/file.svg" },
   { name: "Weather App", url: "https://weather.com", img: "/file.svg" },
   { name: "Finance Tracker", url: "https://finance.com", img: "/file.svg" },
@@ -35,8 +43,8 @@ export default function Projects() {
                     src={project.img}
                     alt={project.url}
                     className={styles.cardImage}
-                    width={200}
-                    height={200}
+                    width={800}
+                    height={800}
                   />
                 </div>
                 <div className={styles.cardContent}>
