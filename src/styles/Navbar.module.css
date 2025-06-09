@@ -1,0 +1,100 @@
+/* Navbar.module.css */
+.navbar {
+  background-color: var(--navbar-bg);  /* Semi-transparent background to blend */
+  padding: 15px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px); /* Optional: Adds a slight blur effect to make it blend */
+  border: none; /* Ensure there's no border */
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 30%);
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--navbar-text);
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.navLinks li a {
+  color: var(--navbar-text);
+  font-size: 1rem;
+}
+
+.navLinks li a:hover {
+  color: #ff6347; /* Change to any hover color you prefer */
+}
+/* Toggle switch styling */
+.toggleContainer {
+  display: flex;
+  align-items: center;
+}
+.spacer {
+  flex-grow: 1;
+}
+
+/* Label for the current theme */
+.themeLabel {
+  color: var(--navbar-text);
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}

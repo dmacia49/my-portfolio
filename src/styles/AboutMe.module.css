@@ -1,0 +1,27 @@
+.aboutSection {
+  padding: 50px 20px;
+  text-align: left;
+  background-color: var(--navbar-bg);  /* Semi-transparent background to blend */
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Optional: Adds a slight blur effect to make it blend */
+  border: none; /* Ensure there's no border */
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 30%);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color:var(--text-color);
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
